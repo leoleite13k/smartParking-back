@@ -11,5 +11,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
-  }
+  },
+  "repository": "git@github.com:leoleite13k/APISmartParking.git",
+  "author": "Leonardo Leite <leonardotleite13k@gmail.com>"
 }
