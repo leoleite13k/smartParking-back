@@ -2,7 +2,17 @@ const Parking = require('../model/Parking')
 
 class ParkingController {
   async index (req, res) {
-    const vagas = await Parking.find()
+    const filters = {}
+
+    if (req.query.pos) {
+      filters.pos = req.query.pos
+    }
+
+    if (req.query.disp) {
+      filters.disp = new RegExp(req.query.disp, 'i')
+    }
+
+    const vagas = await Parking.find(filters).sort({ createdAt: 1 })
 
     return res.json(vagas)
   }
