@@ -11,12 +11,12 @@ routes.get('/vagas', handle(controllers.ParkingController.index))
 routes.get('/vagas/:id', handle(controllers.ParkingController.show))
 routes.post(
   '/vagas',
-  validate(validators.Parking),
+  validate(validators.ParkingCreate),
   handle(controllers.ParkingController.store)
 )
 routes.put(
   '/vagas/:id',
-  validate(validators.Parking),
+  validate(validators.ParkingUpdate),
   handle(controllers.ParkingController.update)
 )
 routes.delete('/vagas/:id', handle(controllers.ParkingController.destroy))

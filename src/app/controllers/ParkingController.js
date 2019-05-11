@@ -9,7 +9,7 @@ class ParkingController {
     }
 
     if (req.query.disp) {
-      filters.disp = new RegExp(req.query.disp, 'i')
+      filters.disp = req.query.disp
     }
 
     const vagas = await Parking.find(filters).sort({ createdAt: 1 })
