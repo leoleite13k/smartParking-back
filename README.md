@@ -1,4 +1,4 @@
-# API Smart Parking
+# API Smart Parking :car:
 Api desenvolvido em NodeJS utilizando o banco de dados MongoSB Atlas.
 
 Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
@@ -44,7 +44,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
   ###### Body
   
     Enviar um objeto do seguinte formato:
-```
+```javascript
   {
     "pos": "@23",
     "disp": 2
