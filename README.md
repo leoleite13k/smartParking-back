@@ -34,7 +34,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
     /vagas: Grava no banco o objeto enviado.
 
-    Corpo do objeto:
+  ##### Corpo do objeto:
 
   ```javascript
     {
