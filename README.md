@@ -13,7 +13,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     
     /vagas/id : Retorna a vaga na qual foi filtrada.
 
-#####  Query Parms 
+##### Parâmetros
     nVaga: O Query Param nVaga deve conter o seguinte formato: @numeroDaVaga
     
     Disponiblidade: O Query Param Disponiblidade deve conter o seguinte formato: Inteiro de 1 há 3
@@ -21,24 +21,41 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
       2 - Reservadas
       3 - Oculpadas
 
-##### Parâmetros
     id: O Parâmetro id deve conter o seguinte formato: String
+    
+##### Exemplos
+  ###### /vagas
+  ###### /vagas?disp=1
+  ###### /vagas?pos=@1
+  ###### /vagas/5cd733735b220f13b3cc6a98
+  
 
   ####  POST
 
     /vagas : Grava no banco o objeto enviado.
 
-  ######  Body
-  
+  ######    Corpo do objeto
     Enviar um objeto do seguinte formato:
+    
   ```javascript
     {
-      "pos": "@23",
-      "disp": 2
+      "pos": "@Vaga",
+      "disp": Disponibilidade
+    }
+  ```
+  
+##### Exemplos
+  ###### /vagas
+  
+    ```javascript
+    {
+      "pos": "@8",
+      "disp": 1
     }
   ```
 
   ####  PUT
+
 
   ####  DELETE
 
