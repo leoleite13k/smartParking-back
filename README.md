@@ -54,6 +54,25 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 >  ```
 
   ####  PUT
+  
+    /vagas/id: Alterar a disponibilidade de uma vaga.
+    
+ ##### Corpo do objeto:
+
+  ```javascript
+    {
+      "disp": Disponibilidade
+    }
+  ```
+  
+##### Exemplos
+>    /vagas/id
+>
+>  ```javascript
+>    {
+>      "disp": 2
+>    }
+>  ```
 
 
   ####  DELETE
