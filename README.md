@@ -3,6 +3,7 @@ Api desenvolvido em NodeJS utilizando o banco de dados MongoDB Atlas.
 
 Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
+
   ####  GET
 
     /vagas: Retorna todas as vagas gravadas no banco de dados.
@@ -53,6 +54,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 >    }
 >  ```
 
+
   ####  PUT
   
     /vagas/id: Alterar a disponibilidade de uma vaga.
@@ -66,7 +68,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
   ```
   
 ##### Exemplos
->    /vagas/id
+>    /vagas/5cd733735b220f13b3cc6a98
 >
 >  ```javascript
 >    {
@@ -76,5 +78,10 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
 
   ####  DELETE
-
+  
+    /vagas/id: Deleta a vaga.
+    
+ 
+##### Exemplos
+>    /vagas/5cd733735b220f13b3cc6a98
 
