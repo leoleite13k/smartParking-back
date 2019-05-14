@@ -44,14 +44,14 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
   ```
   
 ##### Exemplos
-    /vagas
-
-  ```javascript
-    {
-      "pos": "@8",
-      "disp": 1
-    }
-  ```
+>    /vagas
+>
+>  ```javascript
+>    {
+>      "pos": "@8",
+>      "disp": 1
+>    }
+>  ```
 
   ####  PUT
 
