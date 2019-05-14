@@ -33,15 +33,17 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
   ####  POST
 
-    /vagas: Grava no banco o objeto enviado.
+    /vagas: Grava no banco o array de objetos enviado.
 
   ##### Corpo do objeto:
 
   ```javascript
-    {
-      "pos": "@Vaga",
-      "disp": Disponibilidade
-    }
+    [
+      {
+        "pos": "@Vaga",
+        "disp": Disponibilidade
+      }
+    ]
   ```
   
 ##### Exemplos
