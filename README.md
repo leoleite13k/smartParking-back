@@ -5,7 +5,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
 ### Rotas e Parâmetros
 
-##### GET
+##### - GET
 
 **/vagas :** Retorna todas as vagas gravadas no banco de dados.
 
@@ -37,7 +37,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     
 *Exemplo*: **/vagas/5cd733735b220f13b3cc6a98**
 
-##### POST
+##### - POST
 
 **/vagas :** Grava no banco o objeto enviado.
 
@@ -51,8 +51,8 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
   }
 ```
 
-##### PUT
+##### - PUT
 
-##### DELETE
+##### - DELETE
 
 
