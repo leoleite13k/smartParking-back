@@ -3,8 +3,6 @@ Api desenvolvido em NodeJS utilizando o banco de dados MongoDB Atlas.
 
 Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
-### Rotas e Parâmetros
-
   ####  GET
 
     /vagas : Retorna todas as vagas gravadas no banco de dados.
