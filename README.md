@@ -51,8 +51,8 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
   }
 ```
 
-##### - PUT
+  ####  PUT
 
-##### - DELETE
+  ####  DELETE
 
 
