@@ -11,7 +11,7 @@ routes.get('/vagas', handle(controllers.ParkingController.index))
 routes.get('/vagas/:id', handle(controllers.ParkingController.show))
 routes.post(
   '/vagas',
-  validate(validators.ParkingCreate),
+  validate([validators.ParkingCreate]),
   handle(controllers.ParkingController.store)
 )
 routes.put(
