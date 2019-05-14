@@ -28,8 +28,8 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     /vagas
     /vagas?disp=1
     /vagas?pos=@1
-    /vagas/5cd733735b220f13b3cc6a98
-  
+    /vagas/5cd733735b220f13b3cc6a98 
+---
 
   ####  POST
 
@@ -50,7 +50,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
       "pos": "@8",
       "disp": 1
     }
-
+---
 
   ####  PUT
   
@@ -69,7 +69,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     {
       "disp": 2
     }
-
+---
 
   ####  DELETE
   
