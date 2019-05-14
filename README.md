@@ -6,13 +6,13 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
   ####  GET
 
-    /vagas: Retorna todas as vagas gravadas no banco de dados.
+    /vagas: Retorna um array com todos os objetos(vagas) gravadas no banco de dados.
 
-    /vagas?pos=nVaga: Retorna a vaga na qual foi filtrada.
+    /vagas?pos=nVaga: Retorna um objeto com os dados da vaga na qual foi filtrada.
     
-    /vagas?disp=Disponiblidade: Retorna as vagas com a disponibilidade filtrada.
+    /vagas?disp=Disponiblidade: Retorna um array de objetos com as vagas que tem a disponibilidade filtrada.
     
-    /vagas/id: Retorna a vaga na qual foi filtrada.
+    /vagas/id: Retorna um objeto com os dados da vaga na qual foi filtrada.
 
 ##### Parâmetros
     nVaga: O Query Param nVaga deve conter o seguinte formato: @numeroDaVaga
