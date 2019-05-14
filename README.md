@@ -35,8 +35,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     /vagas : Grava no banco o objeto enviado.
 
   ######    Corpo do objeto
-    Enviar um objeto do seguinte formato:
-    
+    Enviar um objeto do seguinte formato:   
   ```javascript
     {
       "pos": "@Vaga",
@@ -49,8 +48,8 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 >  
   ```javascript
     {
-      "pos": "@Vaga",
-      "disp": Disponibilidade
+      "pos": "@8",
+      "disp": 1
     }
   ```
 
