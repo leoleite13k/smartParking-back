@@ -53,27 +53,27 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
   ##### Corpo do objeto:
 
-  ```javascript
-    [
-      {
-        "pos": "@Vaga"
-      }
-    ]
-  ```
+```javascript
+  body: [
+          {
+            "pos": "@numeroVaga"
+          }
+        ]
+```
   
 ##### Exemplo
     /vagas
     
-    ```javascript
-    body: [
-            {
-              "pos": "@1",
-            },
-            {
-              "pos": "@2",
-            }
-          ]
-    ```
+```javascript
+body: [
+        {
+          "pos": "@1",
+        },
+        {
+          "pos": "@2",
+        }
+      ]
+```
 ---
 
   ####  PUT
@@ -82,20 +82,20 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     
  ##### Corpo do objeto:
 
-  ```javascript
-    {
-      "disp": Disponibilidade
-    }
-  ```
+```javascript
+body: {
+        "disp": Disponibilidade
+      }
+```
   
 ##### Exemplo
     /vagas/5cd733735b220f13b3cc6a98
     
-    ```javascript
-    body: {
-            "disp": 2
-          }
-    ```
+```javascript
+body: {
+        "disp": 2
+      }
+```
 ---
 
   ####  DELETE
