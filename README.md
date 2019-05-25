@@ -61,11 +61,19 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     ]
   ```
   
-##### Exemplos
+##### Exemplo
     /vagas
-    {
-      "pos": "@8",
-    }
+    
+    ```javascript
+    body: [
+            {
+              "pos": "@1",
+            },
+            {
+              "pos": "@2",
+            }
+          ]
+    ```
 ---
 
   ####  PUT
@@ -80,11 +88,14 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     }
   ```
   
-##### Exemplos
+##### Exemplo
     /vagas/5cd733735b220f13b3cc6a98
-    {
-      "disp": 2
-    }
+    
+    ```javascript
+    body: {
+            "disp": 2
+          }
+    ```
 ---
 
   ####  DELETE
