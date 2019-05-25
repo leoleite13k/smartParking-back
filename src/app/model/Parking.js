@@ -7,7 +7,8 @@ const ParkingSchema = mongoose.Schema({
   },
   disp: {
     type: Number,
-    require: true
+    require: true,
+    default: 1
   },
   createdAt: {
     type: Date,
