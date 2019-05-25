@@ -54,25 +54,25 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
   ##### Corpo do objeto:
 
 ```javascript
-  body: [
-          {
-            "pos": "@numeroVaga"
-          }
-        ]
+[
+  {
+    "pos": "@numeroVaga"
+  }
+]
 ```
   
 ##### Exemplo
     /vagas
     
 ```javascript
-body: [
-        {
-          "pos": "@1",
-        },
-        {
-          "pos": "@2",
-        }
-      ]
+[
+  {
+    "pos": "@1",
+  },
+  {
+    "pos": "@2",
+  }
+]
 ```
 ---
 
@@ -83,18 +83,18 @@ body: [
  ##### Corpo do objeto:
 
 ```javascript
-body: {
-        "disp": Disponibilidade
-      }
+{
+  "disp": Disponibilidade
+}
 ```
   
 ##### Exemplo
     /vagas/5cd733735b220f13b3cc6a98
     
 ```javascript
-body: {
-        "disp": 2
-      }
+{
+  "disp": 2
+}
 ```
 ---
 
