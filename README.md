@@ -33,15 +33,30 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
   ####  POST
 
-    /vagas: Grava no banco o array de objetos enviado.
+    **Deve ser enviado somente as vagas Livres (Lidas pelo App)**
+    
+    /vagas: Grava no banco o array de objetos enviado de acordo com as seguintes regras:
+    
+    1 - Novas Vagas
+      - Se o valor da key "pos" no objeto não existir no banco, a mesma é cadastrada no banco como disponível.
+      
+    2 - Vagas Livres
+      - Se o valor da key "pos" no objeto exitir no banco e não extiver reservada, a mesma mudará para disponível.
+      
+    3 - Vagas Oculpadas
+      - Se o valor da key "pos" no objeto exitir no banco e extiver oculpada, a mesma mudará para disponível.
+      
+    4 - Vagas Reservadas
+      - Se não existir o valor da key "pos" no objeto e a pos exitir no banco e estiver como reservada, a mesma mudará para oculpada.
+      
+    
 
   ##### Corpo do objeto:
 
   ```javascript
     [
       {
-        "pos": "@Vaga",
-        "disp": Disponibilidade
+        "pos": "@Vaga"
       }
     ]
   ```
@@ -50,7 +65,6 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
     /vagas
     {
       "pos": "@8",
-      "disp": 1
     }
 ---
 
