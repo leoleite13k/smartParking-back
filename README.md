@@ -33,7 +33,7 @@ Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
 
   ####  POST
 
-    * Deve ser enviado somente as vagas Livres (Lidas pelo App)
+    * Deve ser enviado somente as vagas Livres (Lidas pela câmera)
     
     /vagas: Grava no banco o array de objetos enviado de acordo com as seguintes regras:
     
