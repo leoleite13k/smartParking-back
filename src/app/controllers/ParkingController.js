@@ -83,6 +83,20 @@ class ParkingController {
       })
     }
 
+    // Remove reserva depois de 10 min
+    if (posReservada.length !== 0) {
+      posReservada.map(async item => {
+        let { _id, updatedAt } = await vagasReservada.find(x => x.pos === item)
+        let currentDate = new Date()
+        let difference = currentDate.getTime() - updatedAt.getTime()
+        var resultInMinutes = Math.round(difference / 60000)
+
+        if (resultInMinutes >= 10) {
+          await Parking.findByIdAndUpdate(_id, { disp: 1 }, { new: true })
+        }
+      })
+    }
+
     // Criar objeto e envia array para novas vagas e insere as novas no banco
     vagaNova.map(item => {
       let position = {
