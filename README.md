@@ -1,7 +1,7 @@
 # API Smart :parking:arking :car:
-Api desenvolvido em NodeJS utilizando o banco de dados MongoDB Atlas.
+Api desenvolvida em NodeJS utilizando o banco de dados MongoDB.
 
-Desenvolvida para ser utilizada na integração entre o App e o banco de dados.
+Utilizada na integração entre o App e o banco de dados.
 
 
   ####  GET
